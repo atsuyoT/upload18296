@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 768px) {
+    h1 {
+        color: lime;
+        text-align: center;
+        font-size: 100%;
+    }
+    h1:hover {
+        color: red;
+    }
+    .nav-link {
+        color: lime;
+        float: none;
+    }
+    .nav-link:hover {
+        color: #007bff;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%; 
+        line-height: 60px;
+        background-color: #eee;
+        font-size: 100%; 
+    }
+}

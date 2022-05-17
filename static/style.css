@@ -1,0 +1,39 @@
+h1 {
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+h1:hover {
+    color: lime;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    background-color: #eee;
+    font-weight: 800; 
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    float: left;
+}
+a:hover {
+    color: lime;
+    font-weight: bold;
+}
+.text-muted:hover {
+    color: blue!important;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    vertical-align: middle;
+}
