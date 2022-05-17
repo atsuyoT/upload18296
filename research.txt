@@ -12,3 +12,5 @@ python                              //these 4 lines active database
 >>> exit()
 
 https://www.youtube.com/watch?v=6plVs_ytIH8&list=RDCMUCKQdc0-Targ4nDIAUrlfKiA&index=13  //upload last 5 min
+
+https://github.com/atsuyoT/upload18296.git //my github page
