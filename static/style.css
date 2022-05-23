@@ -1,10 +1,27 @@
+.btn {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.btn:hover {
+    color: black;
+    background-color: orange;
+  }
+
 h1 {
     color: red;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
 }
 h1:hover {
     color: lime;
+    font-weight: bold;
+}
+#content {
+    background-color: lightyellow;
 }
 .footer {
     position: absolute;
@@ -20,10 +37,10 @@ h1:hover {
     padding: 0.5rem 1rem;
     float: left;
 }
-a:hover {
+/* a:hover {
     color: lime;
     font-weight: bold;
-}
+} */
 .text-muted:hover {
     color: blue!important;
 }

@@ -14,3 +14,28 @@ python                              //these 4 lines active database
 https://www.youtube.com/watch?v=6plVs_ytIH8&list=RDCMUCKQdc0-Targ4nDIAUrlfKiA&index=13  //upload last 5 min
 
 https://github.com/atsuyoT/upload18296.git //my github page
+
+
+//Install the Heroku CLI
+//Download and install the Heroku CLI.
+
+//If you haven't already, log in to your Heroku account 
+//and follow the prompts to create a new SSH public key.
+    $ heroku login
+
+//Create a new Git repository
+//Initialize a git repository in a new or existing directory
+    $ cd my-project/
+    $ git init
+    $ heroku git:remote -a upload18296
+
+//Deploy your application
+//Commit your code to the repository and deploy it to Heroku using Git.
+    $ git add .
+    $ git commit -am "make it better"
+    $ git push heroku main    //You can now change your main deploy branch from "master" to "main"
+                              // for both manual and automatic deploys
+
+//Existing Git repository
+//For existing repositories, simply add the heroku remote
+    $ heroku git:remote -a upload18296
