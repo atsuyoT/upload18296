@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<h1>This is about page coded by {{ author }}</h1>
+<img src="{{ url_for('static', filename='images/frame.png') }}" 
+ alt="My Website" style="width: 15%; margin: auto; display: block;"/>
+ 
+{% endblock %}
