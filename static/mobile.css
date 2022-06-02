@@ -1,8 +1,9 @@
+
 @media screen and (max-width: 768px) {
     h1 {
         color: lime;
         text-align: center;
-        font-size: 100%;
+        font-size: 22px;
     }
     h1:hover {
         color: red;
@@ -14,33 +15,16 @@
     .nav-link:hover {
         color: #007bff;
     }
-    btn {
-        font-size: 50%;
-    }
-    /* #mybutton {
-        width: 100px;
-        float: left;
-        height: 28px;
-        padding: 0 2px;
-        margin: 1px;
-    }
-    #mainbutton {
-        width: 100px;
-    } */
     .footer {
         display: none;
+        /* position: absolute;
+        bottom: 0;
+        width: 100%; 
+        line-height: 60px;
+        background-color: #eee;
+        font-size: 100%;  */
     }
-    #content {
-        background-color: lightyellow;
+    table {
+        text-align: center;
     }
 }
-
-
-/* For Mobile Phones */
-/* @media (max-width:480px){} */
-
-/* For Tablets */
-/* @media (max-width:960px){} */
-
-/* For Laptops/Desktop */
-/* @media (min-width:1025px){} */
