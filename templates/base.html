@@ -13,9 +13,9 @@
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         crossorigin="anonymous"
     />
-    
+
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">  
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
@@ -35,6 +35,7 @@
             <div class="navbar-nab">
                 <a class="nav-item nav-link" id="home" href="/">Home</a>
                 <a class="nav-item nav-link" id="todo" href="/todo">Task Todo</a>
+                <a class="nav-item nav-link" id="forloop" href="/forloop">For Loop</a>
                 <a class="nav-item nav-link" id="about" href="/about">About</a>
             </div>
         </div>
@@ -43,7 +44,7 @@
         {% block content %}<br>{% endblock %}
     </div>
     <footer class="footer">
-        <div class="container" style="padding-top: 7px;">
+        <div class="container">
             <span class="text-muted">Powerd by {{ author }} in Wells International College</span>
         </div>
     </footer>
