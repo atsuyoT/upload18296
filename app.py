@@ -5,8 +5,8 @@ from datetime import datetime
 from sqlalchemy import false
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-SQLALCHEMY_TRACK_MODIFICATIONS = False
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
@@ -18,7 +18,8 @@ class Todo(db.Model):
     def __repr__(self):
         return '<Task %r>' % self.id
 
-author = "TEST 18296"
+author = "Atsuyo 18296"
+fruits = ["🍎apple🍏", "🍌banana🍌", "🍒cherry🍒", "🍑peach🍑", "🥝kiwifruit🥝", "🍓more🍋"]
 
 @app.route("/")
 def index():
@@ -61,6 +62,10 @@ def update(id):
             return 'There was an issue updating your task'
     else:
         return render_template('update.html', task=task, author=author)
+
+@app.route("/forloop")
+def forloop():
+    return render_template('forloop.html', author=author, passfruits=fruits)
 
 @app.route("/about")
 def about():
